@@ -27,7 +27,23 @@
                 </div>
             </div>
         </div>
+
+        <div class="glass-card second-card">
+            <div class="part">
+                <div class="imgbox">
+                    <img src="https://www.plastykstudios.com.au/assets/Uploads/syeira.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>Syeira</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptatum nisi veniam dicta officiis earum labore maiores voluptates, error doloribus.</p>
+                    <a href="#"><span>Read More...</span></a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
 
 
     <div class="circle1"></div>
@@ -43,6 +59,20 @@
         perspective: 800,
         transition: true,
         gyroscope: true
+    })
+
+    VanillaTilt.init(document.querySelector(".second-card"), {
+        max: 8,
+        speed: 200,
+        glare: true,
+        "max-glare": 0.3,
+        perspective: 800,
+        transition: true,
+        gyroscope: true,
+        gyroscopeMinAngleX: -45, 
+        gyroscopeMaxAngleX: 180,      
+        gyroscopeMinAngleY: -45,     
+        gyroscopeMaxAngleY: 180
     })
     </script>
 </body>
